@@ -14,7 +14,7 @@
             <div class="carousel-inner">
                 @foreach ($slideshow as $s)
                     <div class="carousel-item active">
-                        <img src="{{ url('storage/slideshow/' . $s->gambar) }}" class="d-block w-100" alt="...">
+                        <img src="{{ url('storage/slideshow/' . $s->gambar ?? '') }}" class="d-block w-100" alt="...">
                     </div>
                 @endforeach
             </div>
